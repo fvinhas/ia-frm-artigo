@@ -1,0 +1,29 @@
+{
+  "modelo": "gemma4:12b",
+  "digest": "c7597fc90b86aff6965317f37dd5465402284e26382d9b4bf2dfe3ef1491f4b6",
+  "tamanho_bytes": 7714091504,
+  "detalhes": {
+    "parent_model": "",
+    "format": "safetensors",
+    "family": "",
+    "families": null,
+    "parameter_size": "",
+    "quantization_level": "",
+    "runner": "mlx"
+  },
+  "ollama": "0.40.14",
+  "opcoes": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192
+  },
+  "think": false,
+  "prompt": "classificador_v3.md",
+  "amostra": "dupla",
+  "trechos": 183,
+  "segundos_por_trecho_nesta_execucao": 13.6,
+  "respostas_pedidas_de_novo": 0,
+  "respostas_invalidas": 0,
+  "respostas_com_chave_final_acrescentada": 0,
+  "data": "2026-11-03"
+}

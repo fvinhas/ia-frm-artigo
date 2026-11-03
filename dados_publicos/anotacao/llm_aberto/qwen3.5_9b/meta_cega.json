@@ -1,0 +1,29 @@
+{
+  "modelo": "qwen3.5:9b",
+  "digest": "d63f830f28d515fefea546f213fca7a75e9dd5176ef51a6deabc952d1c99a911",
+  "tamanho_bytes": 7639229431,
+  "detalhes": {
+    "parent_model": "",
+    "format": "safetensors",
+    "family": "",
+    "families": null,
+    "parameter_size": "",
+    "quantization_level": "",
+    "runner": "mlx"
+  },
+  "ollama": "0.40.14",
+  "opcoes": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192
+  },
+  "think": false,
+  "prompt": "classificador_v3.md",
+  "amostra": "cega",
+  "trechos": 97,
+  "segundos_por_trecho_nesta_execucao": 7.0,
+  "respostas_pedidas_de_novo": 0,
+  "respostas_invalidas": 0,
+  "respostas_com_chave_final_acrescentada": 74,
+  "data": "2026-11-03"
+}

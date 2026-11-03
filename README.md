@@ -27,7 +27,8 @@ there are no human participants.
 | `dados_publicos/anotacao/` | População de trechos, amostra, padrão-ouro, lotes que o classificador leu e o que respondeu |
 | `dados_publicos/resultados/` | Validação, tabelas da população classificada e índices por companhia-ano |
 | `dados_publicos/h2d/` | Figuras do artigo (PNG e SVG) e os dados de cada figura (`dados_figuras.xlsx`) |
-| `SUPLEMENTAR.md` | Material suplementar S2: revocação, desenho do padrão-ouro, adjudicação, deriva e correção |
+| `SUPLEMENTAR.md` | Material suplementar S2: revocação, desenho do padrão-ouro, adjudicação, deriva, correção e modelo aberto |
+| `modelo_aberto.py`, `dados_publicos/anotacao/llm_aberto/` | Comparação com um modelo aberto (Gemma 4 via Ollama), reaplicável num computador pessoal |
 
 Não estão aqui, por tamanho, os ZIPs baixados da CVM (~25 GB) nem o texto extraído
 (`secoes_AAAA.jsonl`, ~1,2 GB). O pipeline refaz os dois a partir dos dados abertos da CVM.
@@ -145,6 +146,23 @@ confundi-la com o adjetivo "genérico" aplicado aos riscos pouco específicos; o
     formulário; os 116 trechos novos foram classificados com o v3 (`anotacao/llm_v3_primeira/`) →
     `resultados/complementares/sensibilidade_versao.csv`.
 
+## Reaplicar com um modelo aberto
+
+O classificador do estudo é proprietário. Para reaplicar o procedimento sem ele, use o modelo aberto avaliado no
+artigo (seção 4.5; detalhes em `SUPLEMENTAR.md`, S2.6), em qualquer sistema com [Ollama](https://ollama.com) e cerca
+de 10 GB livres de memória:
+
+```
+ollama pull gemma4:12b-it-q4_K_M
+python modelo_aberto.py classificar gemma4:12b-it-q4_K_M dados_publicos/anotacao dupla saida/gemma
+python modelo_aberto.py comparar dados_publicos/anotacao saida/gemma
+```
+
+Use a tag completa `gemma4:12b-it-q4_K_M` (GGUF): é o mesmo arquivo em qualquer sistema e aceita saída estruturada. No
+Mac, a tag curta `gemma4:12b` baixa outra quantização, com resultados diferentes. Na amostra de teste, o Gemma 4
+concordou na função com cada anotador no nível dos anotadores entre si (α 0,70 e 0,72 contra 0,71), mas abaixo do
+Claude contra o consenso (0,69 contra 0,89).
+
 ## Dados de administradores
 
 Os trechos das seções 7 (assembleia e administração), 8 (remuneração) e 13 (declarações) podem citar
@@ -171,5 +189,5 @@ para citar uma versão específica, use o DOI dela (lista abaixo). Ver também `
 
 | Versão | DOI | O que mudou |
 | --- | --- | --- |
-| 1.1.0 | ver a página do Zenodo | Figuras 2 e 3 com a função "contextual" (código `GENERICA`), "<1" para valores que arredondam a zero e bordas uniformes; material suplementar S2 (`SUPLEMENTAR.md`); versões exatas no `requirements.txt`; metadados do Zenodo e do `CITATION.cff` em português e inglês. Nenhum resultado numérico mudou. |
+| 1.1.0 | ver a página do Zenodo | Comparação com modelo aberto (`modelo_aberto.py`, Gemma 4 via Ollama; S2.6); figuras 2 e 3 com a função "contextual" (código `GENERICA`), "<1" para valores que arredondam a zero e bordas uniformes; material suplementar S2 (`SUPLEMENTAR.md`); versões exatas no `requirements.txt`; metadados do Zenodo e do `CITATION.cff` em português e inglês. Nenhum resultado da versão 1.0.0 mudou. |
 | 1.0.0 | [10.5281/zenodo.23919754](https://doi.org/10.5281/zenodo.23919754) | Primeira versão pública. |

@@ -89,3 +89,53 @@ Sobre o tempo (seção 5.4): a correção baseada apenas nos trechos cegos do au
 referência temporal em 2026 (IC95% de 20,6% a 52,0%), contra 52,0% do modelo; a correção de referência, pela anotação
 dupla, não confirma essa diferença (50,7%; IC95% de 48,1% a 52,0%, cujo limite superior coincide com o valor do modelo
 porque poucos trechos da amostra divergem nessa medida).
+
+## S2.6 Comparação com um modelo aberto (seção 4.5)
+
+O classificador do estudo é um modelo proprietário (Claude Opus 5.5). Para que qualquer leitor possa reaplicar e
+auditar o procedimento num computador pessoal, o mesmo *prompt* (`prompts/classificador_v3.md`) foi aplicado a
+modelos abertos via [Ollama](https://ollama.com) 0.40.14, um trecho por chamada, com temperatura 0, semente 42,
+raciocínio desligado e saída restrita por esquema JSON aos códigos do guia (`modelo_aberto.py`). Máquina: MacBook Air
+M5 com 16 GB de memória, cerca de 12 segundos por trecho.
+
+**Escolha do modelo** (amostra de desenvolvimento: os 97 trechos cegos do padrão-ouro, contra o autor). Dois
+candidatos que cabem em 16 GB: Gemma 4 12B (α = 0,75 na função) e Qwen 3.5 9B (α = 0,59). Venceu o Gemma 4.
+
+**Modelo do artigo:** `gemma4:12b-it-q4_K_M` (GGUF, quantização Q4_K_M, digest
+`6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b`). É o mesmo arquivo em qualquer sistema e aceita
+saída estruturada. Nenhuma resposta inválida.
+
+**Resultado na amostra de teste** (anotação dupla às cegas; α de Krippendorff, as mesmas funções da Tabela 2):
+
+| Dimensão | Humanos entre si | Claude × autor | Claude × anotador 2 | Claude × consenso | Gemma × autor | Gemma × anotador 2 | Gemma × consenso |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Função | 0,708 | 0,708 | 0,901 | 0,894 | 0,702 | 0,720 | 0,686 |
+| Evidência | 0,780 | 0,718 | 0,839 | 0,819 | 0,696 | 0,815 | 0,796 |
+| Tom | 0,691 | 0,779 | 0,818 | 0,891 | 0,770 | 0,783 | 0,882 |
+| Tempo | 0,682 | 0,733 | 0,834 | 0,872 | 0,685 | 0,738 | 0,769 |
+| Governança declarada | 0,862 | 0,806 | 0,941 | 0,882 | 0,862 | 1,000 | 0,941 |
+| Falso positivo | 0,957 | 0,957 | 1,000 | 0,957 | 0,904 | 0,861 | 0,904 |
+
+Na função, o modelo aberto concorda com cada anotador no nível em que os anotadores concordam entre si, mas fica bem
+abaixo do Claude contra o consenso. Ele serve para reaplicar e auditar o procedimento, não para substituir o
+classificador. Tabela completa (acordo, α e n por dimensão, amostra e referência):
+`dados_publicos/resultados/comparacao_modelos_abertos.csv`.
+
+**A quantização importa.** No Mac, a tag padrão `gemma4:12b` baixa outra variante do mesmo modelo, que o Ollama roda
+pelo motor MLX (safetensors) e que não aceita saída estruturada. Com ela, a concordância na função foi de 0,680
+(autor), 0,811 (anotador 2) e 0,769 (consenso); em 20 trechos, a função coincidiu com a da variante GGUF em 18. As
+saídas dessa variante e as do Qwen 3.5 ficam publicadas como execuções adicionais
+(`dados_publicos/anotacao/llm_aberto/`); nelas, a validação dos códigos foi feita depois da resposta, e o Qwen precisou
+que a chave final do JSON fosse acrescentada em 74 das 97 respostas (contagens em `meta_*.json`).
+
+**Como reaplicar** (qualquer sistema com Ollama e cerca de 10 GB livres de memória):
+
+```
+ollama pull gemma4:12b-it-q4_K_M
+python modelo_aberto.py classificar gemma4:12b-it-q4_K_M PASTA_ANOTACAO dupla saida/gemma
+python modelo_aberto.py comparar PASTA_ANOTACAO saida/gemma
+```
+
+`PASTA_ANOTACAO` precisa de `populacao_v1.csv`, `ouro_v1.csv`, `classificacoes_llm_v3.csv` e `dupla_v2/`, que estão em
+`dados_publicos/anotacao/`. Nos trechos das seções de administradores, o texto publicado está omitido; para eles, o
+original está no FRE, no site da CVM.

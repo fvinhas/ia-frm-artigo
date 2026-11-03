@@ -115,6 +115,14 @@ def main(pasta, saida):
     for versao in ("llm_v1", "llm_v2", "llm_v3", "llm_v3_rodada2", "llm_v3_primeira", "llm_semsecao", "llm_risco"):
         for arq in sorted((an / versao).glob("*.jsonl")):
             omitidos += copiar_jsonl(arq, saida / "anotacao" / versao / arq.name, ids_privados)
+    # comparação com modelos abertos (modelo_aberto.py): uma pasta por modelo, mais a tabela de concordância
+    for arq in sorted((an / "llm_aberto").glob("*/*.jsonl")):
+        omitidos += copiar_jsonl(arq, saida / "anotacao" / "llm_aberto" / arq.parent.name / arq.name, ids_privados)
+    for arq in sorted((an / "llm_aberto").glob("*/meta_*.json")):
+        (saida / "anotacao" / "llm_aberto" / arq.parent.name).mkdir(parents=True, exist_ok=True)
+        shutil.copy(arq, saida / "anotacao" / "llm_aberto" / arq.parent.name / arq.name)
+    if (an / "llm_aberto" / "comparacao_modelos_abertos.csv").exists():
+        shutil.copy(an / "llm_aberto" / "comparacao_modelos_abertos.csv", saida / "resultados")
     (saida / "h2d").mkdir(parents=True, exist_ok=True)
     for nome in H2D:
         for ext in ("png", "svg"):

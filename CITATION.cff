@@ -11,11 +11,14 @@ type: software
 license: MIT
 version: "1.1.0"
 date-released: "2026-11-03"
-doi: "10.5281/zenodo.23919753"
+doi: "10.5281/zenodo.23925565"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23919753"
     description: "DOI geral (todas as versões; aponta para a mais recente)"
+  - type: doi
+    value: "10.5281/zenodo.23925565"
+    description: "DOI da versão 1.1.0, citada no artigo submetido à H2D"
 repository-code: "https://github.com/fvinhas/ia-frm-artigo"
 keywords:
   - inteligência artificial

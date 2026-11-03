@@ -183,11 +183,12 @@ Vinhas, F. D. V. (2026). *IA nos Formulários de Referência das companhias aber
 (2023–2026): código, prompts e dados* (Versão 1.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23919753
 
 Esse DOI geral aponta sempre para a versão mais recente. Cada release é arquivada no Zenodo com um DOI próprio;
-para citar uma versão específica, use o DOI dela (lista abaixo). Ver também `CITATION.cff`.
+para citar uma versão específica, use o DOI dela (lista abaixo). O artigo submetido à H2D cita a versão 1.1.0:
+https://doi.org/10.5281/zenodo.23925565. Ver também `CITATION.cff`.
 
 ## Versões
 
 | Versão | DOI | O que mudou |
 | --- | --- | --- |
-| 1.1.0 | ver a página do Zenodo | Comparação com modelo aberto (`modelo_aberto.py`, Gemma 4 via Ollama; S2.6); figuras 2 e 3 com a função "contextual" (código `GENERICA`), "<1" para valores que arredondam a zero e bordas uniformes; material suplementar S2 (`SUPLEMENTAR.md`); versões exatas no `requirements.txt`; metadados do Zenodo e do `CITATION.cff` em português e inglês. Nenhum resultado da versão 1.0.0 mudou. |
+| 1.1.0 | [10.5281/zenodo.23925565](https://doi.org/10.5281/zenodo.23925565) | Comparação com modelo aberto (`modelo_aberto.py`, Gemma 4 via Ollama; S2.6); figuras 2 e 3 com a função "contextual" (código `GENERICA`), "<1" para valores que arredondam a zero e bordas uniformes; material suplementar S2 (`SUPLEMENTAR.md`); versões exatas no `requirements.txt`; metadados do Zenodo e do `CITATION.cff` em português e inglês. Nenhum resultado da versão 1.0.0 mudou. |
 | 1.0.0 | [10.5281/zenodo.23919754](https://doi.org/10.5281/zenodo.23919754) | Primeira versão pública. |

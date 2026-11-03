@@ -1,0 +1,7 @@
+dimensao,acordo_cega_pct,mantido_verificacao_pct,correcoes_verificacao
+falso_positivo,100.0,100.0,0
+funcao,90.0,95.3,33
+evidencia,93.0,99.0,7
+governanca,97.0,100.0,0
+tom,93.0,99.9,1
+tempo,92.0,98.9,8

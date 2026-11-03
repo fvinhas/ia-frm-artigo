@@ -1,0 +1,7 @@
+classe,humano,modelo,precisao,revocacao,f1
+PROD,20,20,0.9,0.9,0.9
+USO,18,20,0.85,0.94,0.89
+NEGOCIO,11,12,0.75,0.82,0.78
+RISCO,19,20,0.95,1.0,0.97
+GOV,5,4,1.0,0.8,0.89
+GENERICA,24,21,0.9,0.79,0.84

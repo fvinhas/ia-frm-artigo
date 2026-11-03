@@ -1,0 +1,13 @@
+amostra,dimensao,n,acordo_pct,alfa
+todos,falso_positivo,808,99.6,0.942
+todos,funcao,780,84.7,0.809
+todos,evidencia,780,87.6,0.77
+todos,governanca,780,98.2,0.794
+todos,tom,780,91.2,0.862
+todos,tempo,780,85.4,0.773
+cegos,falso_positivo,100,100.0,
+cegos,funcao,100,85.0,0.813
+cegos,evidencia,100,85.0,0.725
+cegos,governanca,100,95.0,0.601
+cegos,tom,100,91.0,0.859
+cegos,tempo,100,86.0,0.776

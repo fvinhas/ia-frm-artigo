@@ -1,0 +1,33 @@
+{
+  "title": "IA nos Formulários de Referência das companhias abertas brasileiras (2023–2026): código, prompts e dados",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Vinhas, Felipe Domingues Vieira",
+      "orcid": "0009-0007-0461-7023",
+      "affiliation": "Universidade Estácio de Sá"
+    }
+  ],
+  "description": "Pipeline, prompts versionados, padrão-ouro, anotação dupla às cegas e classificação por LLM das menções a inteligência artificial nos Formulários de Referência entregues à CVM, 2023–2026. Licenças: código sob MIT; dados em dados_publicos/ (derivados dos dados abertos da CVM) sob Open Database License (ODbL 1.0) — ver dados_publicos/LICENCA.md.",
+  "license": "MIT",
+  "language": "por",
+  "keywords": [
+    "inteligência artificial",
+    "Formulário de Referência",
+    "CVM",
+    "divulgação corporativa",
+    "humanidades digitais",
+    "modelos de linguagem"
+  ],
+  "notes": "Este registro contém software (MIT) e dados (ODbL 1.0). O campo de licença do Zenodo admite um só valor; a licença dos dados está em dados_publicos/LICENCA.md.",
+  "version": "1.0.0",
+  "publication_date": "2026-10-31",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/fvinhas/ia-frm-artigo/tree/v1.0.0",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

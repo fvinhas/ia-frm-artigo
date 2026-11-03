@@ -1,0 +1,156 @@
+ano,indicador,macrossetor,companhias,grupos
+2023,cita_ia,todos,129,114
+2023,cita_ia,Agro e alimentos,5,5
+2023,cita_ia,Comércio,20,20
+2023,cita_ia,Construção e imobiliário,5,5
+2023,cita_ia,"Educação, turismo e lazer",3,3
+2023,cita_ia,Energia e saneamento,26,17
+2023,cita_ia,Financeiro,15,14
+2023,cita_ia,Holding sem setor principal,4,4
+2023,cita_ia,Indústria,7,7
+2023,cita_ia,Não classificado,3,3
+2023,cita_ia,"Petróleo, gás e mineração",2,2
+2023,cita_ia,Saúde,9,9
+2023,cita_ia,Telecom e TI,26,25
+2023,cita_ia,Transporte e logística,4,3
+2023,risco,todos,13,11
+2023,risco,"Educação, turismo e lazer",1,1
+2023,risco,Financeiro,4,3
+2023,risco,Indústria,2,2
+2023,risco,Não classificado,2,2
+2023,risco,Telecom e TI,4,3
+2023,uso,todos,81,71
+2023,uso,Agro e alimentos,1,1
+2023,uso,Comércio,15,15
+2023,uso,Construção e imobiliário,2,2
+2023,uso,"Educação, turismo e lazer",1,1
+2023,uso,Energia e saneamento,21,14
+2023,uso,Financeiro,10,10
+2023,uso,Holding sem setor principal,2,2
+2023,uso,Indústria,4,4
+2023,uso,Não classificado,2,2
+2023,uso,"Petróleo, gás e mineração",2,2
+2023,uso,Saúde,6,6
+2023,uso,Telecom e TI,12,11
+2023,uso,Transporte e logística,3,2
+2024,cita_ia,todos,155,126
+2024,cita_ia,Agro e alimentos,5,4
+2024,cita_ia,Comércio,17,17
+2024,cita_ia,Construção e imobiliário,7,7
+2024,cita_ia,"Educação, turismo e lazer",3,3
+2024,cita_ia,Energia e saneamento,35,21
+2024,cita_ia,Financeiro,15,14
+2024,cita_ia,Holding sem setor principal,4,4
+2024,cita_ia,Indústria,12,12
+2024,cita_ia,Não classificado,2,2
+2024,cita_ia,"Petróleo, gás e mineração",4,4
+2024,cita_ia,Saúde,12,11
+2024,cita_ia,Telecom e TI,26,25
+2024,cita_ia,Transporte e logística,13,4
+2024,risco,todos,39,27
+2024,risco,Comércio,1,1
+2024,risco,"Educação, turismo e lazer",1,1
+2024,risco,Energia e saneamento,3,1
+2024,risco,Financeiro,8,7
+2024,risco,Indústria,5,5
+2024,risco,Não classificado,1,1
+2024,risco,"Petróleo, gás e mineração",1,1
+2024,risco,Saúde,2,1
+2024,risco,Telecom e TI,9,8
+2024,risco,Transporte e logística,8,1
+2024,uso,todos,94,80
+2024,uso,Agro e alimentos,2,1
+2024,uso,Comércio,13,13
+2024,uso,Construção e imobiliário,5,5
+2024,uso,"Educação, turismo e lazer",2,2
+2024,uso,Energia e saneamento,28,18
+2024,uso,Financeiro,10,10
+2024,uso,Holding sem setor principal,2,2
+2024,uso,Indústria,5,5
+2024,uso,Não classificado,1,1
+2024,uso,"Petróleo, gás e mineração",3,3
+2024,uso,Saúde,6,6
+2024,uso,Telecom e TI,13,12
+2024,uso,Transporte e logística,4,2
+2025,cita_ia,todos,190,151
+2025,cita_ia,Agro e alimentos,8,8
+2025,cita_ia,Comércio,20,19
+2025,cita_ia,Construção e imobiliário,6,6
+2025,cita_ia,"Educação, turismo e lazer",7,6
+2025,cita_ia,Energia e saneamento,44,24
+2025,cita_ia,Financeiro,22,19
+2025,cita_ia,Holding sem setor principal,5,5
+2025,cita_ia,Indústria,13,13
+2025,cita_ia,Não classificado,3,3
+2025,cita_ia,"Petróleo, gás e mineração",4,4
+2025,cita_ia,Saúde,11,10
+2025,cita_ia,Telecom e TI,26,25
+2025,cita_ia,Transporte e logística,21,11
+2025,risco,todos,70,50
+2025,risco,Agro e alimentos,3,3
+2025,risco,Comércio,5,5
+2025,risco,"Educação, turismo e lazer",1,1
+2025,risco,Energia e saneamento,9,3
+2025,risco,Financeiro,11,10
+2025,risco,Holding sem setor principal,1,1
+2025,risco,Indústria,6,6
+2025,risco,Não classificado,2,2
+2025,risco,"Petróleo, gás e mineração",2,2
+2025,risco,Saúde,3,2
+2025,risco,Telecom e TI,11,10
+2025,risco,Transporte e logística,16,6
+2025,uso,todos,93,81
+2025,uso,Agro e alimentos,3,3
+2025,uso,Comércio,13,13
+2025,uso,Construção e imobiliário,4,4
+2025,uso,"Educação, turismo e lazer",3,3
+2025,uso,Energia e saneamento,23,16
+2025,uso,Financeiro,12,11
+2025,uso,Holding sem setor principal,3,3
+2025,uso,Indústria,4,4
+2025,uso,Não classificado,1,1
+2025,uso,"Petróleo, gás e mineração",3,3
+2025,uso,Saúde,6,6
+2025,uso,Telecom e TI,12,11
+2025,uso,Transporte e logística,6,4
+2026,cita_ia,todos,238,181
+2026,cita_ia,Agro e alimentos,11,11
+2026,cita_ia,Comércio,20,20
+2026,cita_ia,Construção e imobiliário,15,15
+2026,cita_ia,"Educação, turismo e lazer",10,9
+2026,cita_ia,Energia e saneamento,62,30
+2026,cita_ia,Financeiro,21,18
+2026,cita_ia,Holding sem setor principal,3,3
+2026,cita_ia,Indústria,21,20
+2026,cita_ia,Não classificado,3,3
+2026,cita_ia,"Petróleo, gás e mineração",7,7
+2026,cita_ia,Saúde,13,13
+2026,cita_ia,Telecom e TI,23,22
+2026,cita_ia,Transporte e logística,29,14
+2026,risco,todos,124,85
+2026,risco,Agro e alimentos,4,4
+2026,risco,Comércio,10,10
+2026,risco,Construção e imobiliário,4,4
+2026,risco,"Educação, turismo e lazer",3,3
+2026,risco,Energia e saneamento,32,13
+2026,risco,Financeiro,12,11
+2026,risco,Indústria,13,12
+2026,risco,Não classificado,1,1
+2026,risco,"Petróleo, gás e mineração",3,3
+2026,risco,Saúde,4,4
+2026,risco,Telecom e TI,12,11
+2026,risco,Transporte e logística,26,11
+2026,uso,todos,108,89
+2026,uso,Agro e alimentos,4,4
+2026,uso,Comércio,14,14
+2026,uso,Construção e imobiliário,6,6
+2026,uso,"Educação, turismo e lazer",4,4
+2026,uso,Energia e saneamento,36,20
+2026,uso,Financeiro,12,11
+2026,uso,Holding sem setor principal,2,2
+2026,uso,Indústria,6,6
+2026,uso,Não classificado,1,1
+2026,uso,"Petróleo, gás e mineração",2,2
+2026,uso,Saúde,7,7
+2026,uso,Telecom e TI,9,8
+2026,uso,Transporte e logística,5,4

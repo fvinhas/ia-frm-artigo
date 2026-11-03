@@ -1,0 +1,4 @@
+leitura,itens,sim,duvida,populacao,estimativa,nota
+"paginas sem termo (secoes 1, 2.10, 4)",120,0,0,,"limite superior 95%: 2,5% das paginas",IA nomeada nao detectada; leitura manual do autor
+trechos da camada vizinhos - termos tecnicos,60,1,5,5481,91 trechos (548 com as duvidas),mencoes implicitas: IA descrita sem ser nomeada
+trechos da camada vizinhos - termos de eficiencia,60,0,1,13457,0 trechos (224 com as duvidas),mencoes implicitas

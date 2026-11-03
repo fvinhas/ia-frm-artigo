@@ -1,0 +1,25 @@
+medida,ano,modelo_pct,consenso_duplo_pct,consenso_duplo_ic95,padrao_ouro_pct,padrao_ouro_ic95,cegos_pct,cegos_ic95,nota
+funcao_RISCO,2023,5.6,5.4,5.4–5.4,5.2,4.5–5.6,5.6,5.6–5.6,consenso: IC de amplitude zero (nenhuma divergência na amostra); cegos: IC de amplitude zero (nenhuma divergência na amostra)
+funcao_USO,2023,40.7,40.5,26.2–53.7,35.8,30.3–41.0,24.0,1.1–42.3,
+funcao_PROD,2023,9.3,8.0,2.9–10.5,13.2,8.6–18.2,19.9,6.2–39.8,
+funcao_NEGOCIO,2023,29.8,31.6,15.4–47.8,33.3,30.6–36.9,30.4,23.4–38.0,
+funcao_GENERICA,2023,14.4,14.3,5.1–25.4,12.2,8.2–16.2,19.9,8.3–34.8,
+funcao_GOV,2023,0.2,0.2,0.2–0.2,0.2,0.2–0.2,0.2,0.2–0.2,consenso: IC de amplitude zero (nenhuma divergência na amostra); padrão-ouro: IC de amplitude zero (nenhuma divergência na amostra); cegos: IC de amplitude zero (nenhuma divergência na amostra)
+evidencia_SEM,2023,27.3,14.7,1.8–25.8,23.7,19.1–28.0,26.7,19.1–33.7,
+tom_NEG,2023,5.6,5.4,5.4–5.4,5.2,4.5–5.6,5.6,5.6–5.6,consenso: IC de amplitude zero (nenhuma divergência na amostra); cegos: IC de amplitude zero (nenhuma divergência na amostra)
+tempo_PLANEJADO,2023,5.9,0.0,0.0–5.8,5.8,4.4–7.2,5.9,5.9–5.9,consenso: estimativa truncada em 0.0; cegos: IC de amplitude zero (nenhuma divergência na amostra)
+tempo_NA,2023,17.3,9.9,0.7–16.1,15.7,12.4–18.9,23.4,17.3–35.6,
+prod_sem_evidencia,2023,10.5,9.2,7.0–24.9,0.0,0.0–9.7,4.9,2.5–15.8,padrão-ouro: estimativa truncada em 0.0
+falso_positivo,2023,2.6,2.4,2.4–2.4,2.3,1.7–2.6,2.6,2.6–2.6,consenso: IC de amplitude zero (nenhuma divergência na amostra); cegos: IC de amplitude zero (nenhuma divergência na amostra)
+funcao_RISCO,2026,40.0,38.8,36.2–40.0,40.0,39.6–40.5,38.3,34.7–40.0,
+funcao_USO,2026,18.0,15.7,11.0–19.1,16.4,14.2–17.9,18.0,18.0–18.0,cegos: IC de amplitude zero (nenhuma divergência na amostra)
+funcao_PROD,2026,11.4,12.3,9.6–15.6,12.9,9.8–16.1,11.4,11.4–11.4,cegos: IC de amplitude zero (nenhuma divergência na amostra)
+funcao_NEGOCIO,2026,11.5,10.6,8.5–11.7,12.9,11.5–15.1,11.5,11.5–11.5,cegos: IC de amplitude zero (nenhuma divergência na amostra)
+funcao_GENERICA,2026,16.6,19.2,16.8–23.0,15.9,11.8–19.8,16.6,16.6–16.6,cegos: IC de amplitude zero (nenhuma divergência na amostra)
+funcao_GOV,2026,2.3,3.4,1.9–6.0,1.9,1.3–2.5,4.1,2.3–7.7,
+evidencia_SEM,2026,64.1,61.3,57.7–63.6,58.8,53.5–63.5,59.1,48.9–64.1,
+tom_NEG,2026,39.1,37.9,35.3–39.1,39.1,39.1–39.1,39.1,39.1–39.1,padrão-ouro: IC de amplitude zero (nenhuma divergência na amostra); cegos: IC de amplitude zero (nenhuma divergência na amostra)
+tempo_PLANEJADO,2026,4.7,5.2,2.2–8.7,5.1,2.5–8.1,4.7,4.7–4.7,cegos: IC de amplitude zero (nenhuma divergência na amostra)
+tempo_NA,2026,52.0,50.7,48.1–52.0,50.8,47.6–53.5,40.3,20.6–52.0,
+prod_sem_evidencia,2026,32.2,30.4,23.9–38.8,35.3,8.5–56.6,32.2,32.2–32.2,cegos: IC de amplitude zero (nenhuma divergência na amostra)
+falso_positivo,2026,1.0,1.0,1.0–1.0,1.0,1.0–1.0,1.0,1.0–1.0,consenso: IC de amplitude zero (nenhuma divergência na amostra); padrão-ouro: IC de amplitude zero (nenhuma divergência na amostra); cegos: IC de amplitude zero (nenhuma divergência na amostra)

@@ -1,0 +1,4 @@
+tipo,ocorrencias,companhias_ano,nomeiam_ia_lidas,nota
+I.A. / A.I. com pontos,49,44,5,"conferidas por leitura do contexto e por filtro de termos de tecnologia; as demais são siglas de outra coisa (auto de infração) ou nomes de empresas, embarcações e pessoas"
+GPT e modelos,297,44,0,"conferidas por leitura do contexto e por filtro de termos de tecnologia; as demais são siglas de outra coisa (auto de infração) ou nomes de empresas, embarcações e pessoas"
+redes neuronais / neural,2,2,2,"conferidas por leitura do contexto e por filtro de termos de tecnologia; as demais são siglas de outra coisa (auto de infração) ou nomes de empresas, embarcações e pessoas"

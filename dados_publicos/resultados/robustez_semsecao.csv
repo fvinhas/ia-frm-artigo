@@ -1,0 +1,4 @@
+grupo,n,acordo_funcao_pct,alfa_funcao,acordo_tempo_pct,acordo_tom_pct,acordo_evidencia_pct,v3_RISCO,semsecao_RISCO,v3_USO,semsecao_USO,v3_PROD,semsecao_PROD,v3_NEGOCIO,semsecao_NEGOCIO,v3_GENERICA,semsecao_GENERICA,v3_GOV,semsecao_GOV,v3_FALSO_POSITIVO,semsecao_FALSO_POSITIVO
+secao_4,100,99.0,0.798,100.0,98.0,97.0,98,97,1,1,1,1,0,0,0,1,0,0,0,0
+demais,94,89.4,0.861,92.6,89.4,87.2,3,3,26,24,13,13,28,33,20,17,4,4,0,0
+todos,194,94.3,0.916,96.4,93.8,92.3,101,100,27,25,14,14,28,33,20,18,4,4,0,0

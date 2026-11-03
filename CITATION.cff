@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Se usar estes dados ou este código, cite assim."
+title: "IA nos Formulários de Referência das companhias abertas brasileiras (2023–2026): código, prompts e dados"
+authors:
+  - family-names: "Vinhas"
+    given-names: "Felipe Domingues Vieira"
+    affiliation: "Universidade Estácio de Sá"
+    orcid: "https://orcid.org/0009-0007-0461-7023"
+type: software
+license: MIT
+version: "1.0.0"
+repository-code: "https://github.com/fvinhas/ia-frm-artigo"
+date-released: "2026-10-31"
+keywords:
+  - inteligência artificial
+  - Formulário de Referência
+  - CVM
+  - divulgação corporativa
+  - humanidades digitais
+  - modelos de linguagem

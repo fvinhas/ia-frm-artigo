@@ -1,0 +1,8 @@
+dimensao,n,acordo_pct,alfa
+funcao_com_fp,300,94.3,0.929
+falso_positivo,300,100.0,1.0
+funcao,297,94.3,0.928
+evidencia,297,95.6,0.921
+tom,297,92.6,0.887
+tempo,297,92.6,0.887
+governanca_declarada,297,97.6,0.729

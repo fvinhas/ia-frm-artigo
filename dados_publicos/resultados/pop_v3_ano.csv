@@ -1,0 +1,6 @@
+ano,trechos,empresas,funcao_RISCO,funcao_USO,funcao_GENERICA,funcao_GOV,funcao_NEGOCIO,funcao_PROD,evidencia_SEM,evidencia_CASO,evidencia_METRICA,tom_NEG,tom_POS,tom_NEU,tempo_NA,tempo_REALIZADO,tempo_PLANEJADO,tempo_EM_CURSO,prod_sem_evidencia_pct,prod_com_metrica_pct,com_governanca_pct
+2023,410,129,5.6,40.7,14.4,0.2,29.8,9.3,27.3,67.3,5.4,5.6,48.8,45.6,17.3,58.5,5.9,18.3,10.5,15.8,1.2
+2024,547,155,17.6,34.6,11.2,0.5,22.9,13.3,38.8,57.2,4.0,17.0,44.1,38.9,28.0,49.0,5.3,17.7,11.0,9.6,2.0
+2025,832,190,28.8,25.7,13.8,1.2,17.2,13.2,50.7,44.2,5.0,28.2,40.4,31.4,40.3,40.0,4.3,15.4,22.7,10.9,3.8
+2026,1576,238,40.0,18.0,16.6,2.3,11.5,11.4,64.1,28.4,7.5,39.1,36.5,24.4,52.0,32.2,4.7,11.1,32.2,13.9,6.2
+total,3365,287,29.4,25.4,14.8,1.5,17.0,11.9,52.2,41.7,6.1,28.8,40.2,31.1,41.0,40.1,4.8,14.1,23.7,12.5,4.3

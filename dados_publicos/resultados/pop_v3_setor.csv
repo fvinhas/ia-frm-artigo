@@ -1,0 +1,40 @@
+macrossetor,ano,trechos,funcao_PROD,funcao_GENERICA,funcao_USO,com_evidencia_pct,funcao_RISCO,funcao_GOV,funcao_NEGOCIO
+Agro e alimentos,2023,7,42.9,42.9,14.3,57.1,,,
+Agro e alimentos,2026,26,3.8,15.4,19.2,19.2,57.7,3.8,
+Agro e alimentos,total,57,12.3,19.3,21.1,29.8,45.6,1.8,
+Comércio,2023,53,13.2,20.8,47.2,77.4,,,18.9
+Comércio,2026,145,19.3,20.0,26.2,54.5,18.6,2.8,13.1
+Comércio,total,327,16.8,19.0,32.4,63.6,13.1,1.2,17.4
+Construção e imobiliário,2023,5,20.0,40.0,40.0,60.0,,,
+Construção e imobiliário,2026,34,5.9,20.6,23.5,29.4,50.0,,
+Construção e imobiliário,total,60,10.0,25.0,36.7,45.0,28.3,,
+"Educação, turismo e lazer",2023,3,,,33.3,0.0,33.3,,33.3
+"Educação, turismo e lazer",2026,60,11.7,21.7,16.7,38.3,25.0,1.7,23.3
+"Educação, turismo e lazer",total,87,10.3,23.0,19.5,35.6,20.7,1.1,25.3
+Energia e saneamento,2023,84,11.9,3.6,73.8,92.9,,,10.7
+Energia e saneamento,2026,349,7.4,9.2,32.1,39.5,46.1,2.9,2.3
+Energia e saneamento,total,674,9.6,8.8,47.5,58.5,28.9,1.6,3.6
+Financeiro,2023,60,6.7,13.3,40.0,65.0,13.3,1.7,25.0
+Financeiro,2026,205,8.3,17.1,19.0,26.8,49.3,4.9,1.5
+Financeiro,total,475,10.5,12.0,24.4,37.5,43.8,3.4,5.9
+Holding sem setor principal,2023,8,,37.5,62.5,50.0,,,
+Holding sem setor principal,2026,29,17.2,27.6,13.8,55.2,,,41.4
+Holding sem setor principal,total,87,14.9,29.9,21.8,57.5,1.1,,32.2
+Indústria,2023,17,5.9,,41.2,82.4,11.8,,41.2
+Indústria,2026,72,11.1,11.1,11.1,29.2,54.2,2.8,9.7
+Indústria,total,162,9.9,9.3,17.3,42.0,42.0,3.1,18.5
+Não classificado,2023,26,11.5,23.1,26.9,42.3,30.8,,7.7
+Não classificado,2026,34,5.9,23.5,5.9,32.4,64.7,,
+Não classificado,total,83,9.6,25.3,13.3,37.3,48.2,,3.6
+"Petróleo, gás e mineração",2023,3,33.3,,66.7,100.0,,,
+"Petróleo, gás e mineração",2026,29,24.1,20.7,17.2,44.8,27.6,,10.3
+"Petróleo, gás e mineração",total,55,25.5,12.7,29.1,58.2,25.5,,7.3
+Saúde,2023,27,3.7,18.5,40.7,70.4,,,37.0
+Saúde,2026,80,8.8,5.0,18.8,37.5,51.2,6.2,10.0
+Saúde,total,181,10.5,8.8,26.5,47.5,36.5,2.8,14.9
+Telecom e TI,2023,111,4.5,16.2,14.4,69.4,3.6,,61.3
+Telecom e TI,2026,360,10.3,27.5,5.8,35.8,25.6,1.1,29.7
+Telecom e TI,total,840,8.8,20.7,10.1,46.7,18.0,1.0,41.4
+Transporte e logística,2023,6,33.3,,66.7,83.3,,,
+Transporte e logística,2026,153,21.6,5.9,11.1,22.9,60.8,,0.7
+Transporte e logística,total,277,23.5,5.1,19.5,33.9,51.6,,0.4

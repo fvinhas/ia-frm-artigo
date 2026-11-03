@@ -1,0 +1,9 @@
+par,dimensao,n,acordo_pct,alfa
+modelo_x_consenso,falso_positivo,183,99.5,0.957
+modelo_x_consenso,funcao_com_fp,183,91.3,0.897
+modelo_x_consenso,funcao,170,91.2,0.894
+modelo_x_consenso,evidencia,170,90.0,0.819
+modelo_x_consenso,tom,170,92.9,0.891
+modelo_x_consenso,tempo,170,91.8,0.872
+modelo_x_consenso,governanca_declarada,170,97.6,0.882
+modelo_x_consenso,governanca_conjunto,170,97.1,0.858

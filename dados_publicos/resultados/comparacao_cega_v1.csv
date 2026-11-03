@@ -1,0 +1,7 @@
+dimensao,n,acordo_pct,alfa
+falso_positivo,100,100.0,
+funcao,100,90.0,0.877
+evidencia,100,93.0,0.878
+tom,100,93.0,0.89
+tempo,100,92.0,0.871
+governanca (conjunto igual),100,97.0,0.879

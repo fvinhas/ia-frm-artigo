@@ -8,7 +8,7 @@
       "affiliation": "Universidade Estácio de Sá"
     }
   ],
-  "description": "Pipeline, prompts versionados, padrão-ouro, anotação dupla às cegas e classificação por LLM das menções a inteligência artificial nos Formulários de Referência entregues à CVM, 2023–2026. Licenças: código sob MIT; dados em dados_publicos/ (derivados dos dados abertos da CVM) sob Open Database License (ODbL 1.0) — ver dados_publicos/LICENCA.md.",
+  "description": "<p>Pipeline, prompts versionados, padrão-ouro, anotação dupla às cegas e classificação por LLM das menções a inteligência artificial nos Formulários de Referência entregues à CVM, 2023–2026. Material suplementar S2 em SUPLEMENTAR.md. Licenças: código sob MIT; dados em dados_publicos/ (derivados dos dados abertos da CVM) sob Open Database License (ODbL 1.0) — ver dados_publicos/LICENCA.md.</p><p><em>English.</em> Pipeline, versioned prompts, gold standard, blind double annotation and LLM classification of mentions of artificial intelligence in the Reference Forms (Formulário de Referência) filed by Brazilian listed companies with the Brazilian Securities and Exchange Commission (CVM), 2023–2026. Supplementary material S2 in SUPLEMENTAR.md. Licences: code under MIT; data in dados_publicos/ (derived from CVM open data) under the Open Database License (ODbL 1.0).</p>",
   "license": "MIT",
   "language": "por",
   "keywords": [
@@ -17,15 +17,22 @@
     "CVM",
     "divulgação corporativa",
     "humanidades digitais",
-    "modelos de linguagem"
+    "modelos de linguagem",
+    "artificial intelligence",
+    "corporate disclosure",
+    "risk factors",
+    "large language models",
+    "digital humanities",
+    "distant reading",
+    "Brazil"
   ],
   "notes": "Este registro contém software (MIT) e dados (ODbL 1.0). O campo de licença do Zenodo admite um só valor; a licença dos dados está em dados_publicos/LICENCA.md.",
-  "version": "1.0.0",
-  "publication_date": "2026-10-31",
+  "version": "1.1.0",
+  "publication_date": "2026-11-03",
   "access_right": "open",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/fvinhas/ia-frm-artigo/tree/v1.0.0",
+      "identifier": "https://github.com/fvinhas/ia-frm-artigo/tree/v1.1.0",
       "relation": "isSupplementTo",
       "scheme": "url"
     }

@@ -30,7 +30,7 @@ from setores import carregar_cadastro
 
 ANOS = ["2023", "2024", "2025", "2026"]
 FUNCOES = [("RISCO", "Risco"), ("USO", "Uso"), ("PROD", "Produtividade"), ("NEGOCIO", "Negócio"),
-           ("GENERICA", "Genérica"), ("GOV", "Governança")]
+           ("GENERICA", "Contextual"), ("GOV", "Governança")]  # código GENERICA = função "contextual" no artigo
 NOME = dict(FUNCOES)
 GRUPOS = [("1 atividades", "1 Atividades"), ("2.10 planos de negócios", "2.10 Planos de negócios"),
           ("2-3 resultados e projeções", "2–3 Resultados e projeções"), ("4 riscos", "4 Fatores de risco"),
@@ -148,11 +148,13 @@ def fig3(ok, saida):
         im = ax.imshow(matriz, cmap=cmap, norm=norm, aspect="auto")
         for i, linha in enumerate(matriz):
             for j, v in enumerate(linha):
-                if ns[i] and v >= 0.05:
+                if ns[i] and v >= 0.5:
                     ax.text(j, i, br(v, 0), ha="center", va="center", fontsize=7.5, color="white" if v >= 35 else TINTA)
+                elif ns[i] and v > 0:  # há trechos, mas arredonda para 0
+                    ax.text(j, i, "<1", ha="center", va="center", fontsize=7, color=TINTA)
                 elif ns[i]:
                     ax.text(j, i, "0", ha="center", va="center", fontsize=7, color=CINZA)
-        ax.set_xticks(range(len(FUNCOES)), ["Risco", "Uso", "Produt.", "Negócio", "Genérica", "Govern."], fontsize=7.5, rotation=0)
+        ax.set_xticks(range(len(FUNCOES)), ["Risco", "Uso", "Produt.", "Negócio", "Context.", "Govern."], fontsize=7.5, rotation=0)
         ax.set_title(f"{ano}", fontsize=9, color=TINTA, loc="left")
         if k == 0:
             ax.set_yticks(range(len(GRUPOS)), [r for _, r in GRUPOS], fontsize=7.5)
@@ -167,10 +169,16 @@ def fig3(ok, saida):
         ax.set_yticks([y - 0.5 for y in range(1, len(GRUPOS))], minor=True)
         ax.grid(which="minor", color="white", linewidth=2)
         ax.tick_params(which="minor", length=0)
+        # borda branca também por fora, para as células das pontas terem o mesmo tamanho aparente das internas
+        for x in (-0.5, len(FUNCOES) - 0.5):
+            ax.axvline(x, color="white", linewidth=2, clip_on=False)
+        for y in (-0.5, len(GRUPOS) - 0.5):
+            ax.axhline(y, color="white", linewidth=2, clip_on=False)
     cb = fig.colorbar(im, ax=eixos, orientation="horizontal", fraction=0.06, pad=0.06, aspect=40,
                       ticks=[0, 1, 5, 10, 20, 35, 50, 75, 100])
     cb.ax.tick_params(labelsize=7, length=0)
-    cb.set_label("% dos trechos do grupo de seção (cada linha soma 100); 0 = nenhum trecho", fontsize=7.5, color=TINTA2)
+    cb.set_label("% dos trechos do grupo de seção (cada linha soma 100); 0 = nenhum trecho; <1 = menos de 1%",
+                 fontsize=7.5, color=TINTA2)
     cb.outline.set_visible(False)
     salvar(fig, saida, "fig3_secao_funcao")
     return linhas

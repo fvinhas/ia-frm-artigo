@@ -1,14 +1,18 @@
 # IA nos Formulários de Referência das companhias abertas brasileiras (2023–2026)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23919753.svg)](https://doi.org/10.5281/zenodo.23919753)
+
 Código, prompts e dados derivados do estudo sobre como as companhias abertas brasileiras falam de
 inteligência artificial (IA) nos Formulários de Referência (FRE) entregues à CVM.
 
 Autor: Felipe Domingues Vieira Vinhas ([ORCID 0009-0007-0461-7023](https://orcid.org/0009-0007-0461-7023)).
-Artigo em preparação para a *H2D – Revista de Humanidades Digitais*.
+Artigo submetido à *H2D – Revista de Humanidades Digitais*: "Entre o uso e o risco: as narrativas sobre
+inteligência artificial nos Formulários de Referência das companhias abertas brasileiras (2023–2026)".
+O material suplementar S2 citado no artigo está em [`SUPLEMENTAR.md`](SUPLEMENTAR.md).
 
 *English summary.* Code, prompts and derived data for a study of how Brazilian listed companies
 write about artificial intelligence in the Reference Forms (Formulário de Referência) they file with
-the Brazilian Securities Commission (CVM), 2023–2026. The pipeline downloads the forms, extracts the
+the Brazilian Securities and Exchange Commission (CVM), 2023–2026. The pipeline downloads the forms, extracts the
 text by section, detects AI mentions with a layered dictionary and classifies each passage with a
 large language model validated against a human gold standard. Everything runs on public documents;
 there are no human participants.
@@ -23,6 +27,7 @@ there are no human participants.
 | `dados_publicos/anotacao/` | População de trechos, amostra, padrão-ouro, lotes que o classificador leu e o que respondeu |
 | `dados_publicos/resultados/` | Validação, tabelas da população classificada e índices por companhia-ano |
 | `dados_publicos/h2d/` | Figuras do artigo (PNG e SVG) e os dados de cada figura (`dados_figuras.xlsx`) |
+| `SUPLEMENTAR.md` | Material suplementar S2: revocação, desenho do padrão-ouro, adjudicação, deriva e correção |
 
 Não estão aqui, por tamanho, os ZIPs baixados da CVM (~25 GB) nem o texto extraído
 (`secoes_AAAA.jsonl`, ~1,2 GB). O pipeline refaz os dois a partir dos dados abertos da CVM.
@@ -54,7 +59,7 @@ rode o pipeline com os dados da CVM:
 
 ## Instalação
 
-Python 3.9 ou mais novo:
+Testado com Python 3.9.6; o `requirements.txt` fixa as versões exatas usadas no estudo:
 
 ```
 python -m venv .venv
@@ -90,7 +95,8 @@ Os comandos supõem os dados em `dados/`.
 
 Cada trecho é classificado em cinco dimensões: função (produtividade, uso, negócio, risco,
 governança, genérica), evidência, governança declarada, tom e tempo. O guia de anotação v1 está nos
-prompts.
+prompts. No artigo, a função genérica (código `GENERICA`) passou a se chamar **contextual**, para não
+confundi-la com o adjetivo "genérico" aplicado aos riscos pouco específicos; os códigos nos dados não mudaram.
 
 - **Padrão-ouro:** 808 trechos estratificados por ano e grupo de seção, com estrato próprio de IA
   generativa. O autor anotou 100 trechos às cegas, sem ver a saída do modelo, e verificou os outros
@@ -156,6 +162,14 @@ no site da CVM.
 ## Como citar
 
 Vinhas, F. D. V. (2026). *IA nos Formulários de Referência das companhias abertas brasileiras
-(2023–2026): código, prompts e dados* (Versão 1.0.0) [Software]. Zenodo.
+(2023–2026): código, prompts e dados* (Versão 1.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23919753
 
-Cada release deste repositório é arquivada no Zenodo, que atribui o DOI da versão. Ver também `CITATION.cff`.
+Esse DOI geral aponta sempre para a versão mais recente. Cada release é arquivada no Zenodo com um DOI próprio;
+para citar uma versão específica, use o DOI dela (lista abaixo). Ver também `CITATION.cff`.
+
+## Versões
+
+| Versão | DOI | O que mudou |
+| --- | --- | --- |
+| 1.1.0 | ver a página do Zenodo | Figuras 2 e 3 com a função "contextual" (código `GENERICA`), "<1" para valores que arredondam a zero e bordas uniformes; material suplementar S2 (`SUPLEMENTAR.md`); versões exatas no `requirements.txt`; metadados do Zenodo e do `CITATION.cff` em português e inglês. Nenhum resultado numérico mudou. |
+| 1.0.0 | [10.5281/zenodo.23919754](https://doi.org/10.5281/zenodo.23919754) | Primeira versão pública. |

@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "Se usar estes dados ou este código, cite assim."
 title: "IA nos Formulários de Referência das companhias abertas brasileiras (2023–2026): código, prompts e dados"
+abstract: "Código, prompts e dados derivados do estudo sobre as narrativas de inteligência artificial nos Formulários de Referência entregues à CVM, 2023–2026. Code, prompts and derived data for a study of AI narratives in the Reference Forms filed by Brazilian listed companies, 2023–2026."
 authors:
   - family-names: "Vinhas"
     given-names: "Felipe Domingues Vieira"
@@ -8,9 +9,14 @@ authors:
     orcid: "https://orcid.org/0009-0007-0461-7023"
 type: software
 license: MIT
-version: "1.0.0"
+version: "1.1.0"
+date-released: "2026-11-03"
+doi: "10.5281/zenodo.23919753"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23919753"
+    description: "DOI geral (todas as versões; aponta para a mais recente)"
 repository-code: "https://github.com/fvinhas/ia-frm-artigo"
-date-released: "2026-10-31"
 keywords:
   - inteligência artificial
   - Formulário de Referência
@@ -18,3 +24,6 @@ keywords:
   - divulgação corporativa
   - humanidades digitais
   - modelos de linguagem
+  - artificial intelligence
+  - corporate disclosure
+  - digital humanities
